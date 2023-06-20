@@ -1,10 +1,10 @@
-import { Search } from "@mui/icons-material"
 import React from "react"
 import "./Header.css"
+import { Search } from "@mui/icons-material"
 import { Avatar } from "@mui/material"
 import { useDataLayerValue } from "./DataLayer"
-function Header() {
-  const [{ user }, dispatch] = useDataLayerValue()
+function Header({ spotify }) {
+  const [{ user }] = useDataLayerValue()
   return (
     <div className="header">
       <div className="header__left">
